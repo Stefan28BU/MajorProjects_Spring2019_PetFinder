@@ -1,0 +1,129 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "software project",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "introduce",
+            "tell me about pet finder",
+            "give a introduction about pet finder",
+            "hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "LoginIntent",
+          "slots": [],
+          "samples": []
+        },
+        {
+          "name": "InputIntent",
+          "slots": [
+            {
+              "name": "username",
+              "type": "AMAZON.SearchQuery"
+            },
+            {
+              "name": "password",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "i want to login",
+            "login",
+            "user name is {username}",
+            "password is {password}"
+          ]
+        },
+        {
+          "name": "DefaultLoginIntent",
+          "slots": [],
+          "samples": [
+            "default account",
+            "login in to default account"
+          ]
+        },
+        {
+          "name": "addPetIntent",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.DE_FIRST_NAME"
+            },
+            {
+              "name": "petKind",
+              "type": "AMAZON.Animal"
+            },
+            {
+              "name": "preference",
+              "type": "AMAZON.SearchQuery"
+            },
+            {
+              "name": "ok",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "{ok} yes",
+            "preference is {preference}",
+            "it is a {petKind}",
+            "name is {name}",
+            "add a pet"
+          ]
+        },
+        {
+          "name": "notificationIntent",
+          "slots": [
+            {
+              "name": "number",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "my notification",
+            "read my notifications",
+            "read my {number} recent notification"
+          ]
+        },
+        {
+          "name": "MyBookingIntent",
+          "slots": [],
+          "samples": [
+            "show my bookings"
+          ]
+        },
+        {
+          "name": "myPetIntent",
+          "slots": [],
+          "samples": [
+            "all my pets"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "32"
+}
